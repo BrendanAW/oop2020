@@ -1,8 +1,6 @@
 package wsb.database;
 
-import wsb.Configuration;
 
-import javax.swing.plaf.nimbus.State;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
@@ -15,17 +13,18 @@ public class Connector {
 
     public static void connect() throws SQLException {
         Properties props = new Properties();
-        props.setProperty("user", Configuration.USER);
-        props.setProperty("password", Configuration.PASS);
-        CONNECTION = DriverManager.getConnection(DB_URL, props);
+        props.setProperty("user", wsb.Configuration.USER);
+        props.setProperty("password", wsb.Configuration.PASS);
+//        CONNECTION = DriverManager.getConnection(DB_URL, props);
         System.out.println("connected");
     }
 
     public static Statement getStatement() throws SQLException {
-        return CONNECTION.createStatement();
+//        return CONNECTION.createStatement();
+        return null;
     }
 
     public static void executeSQL(String sql) throws SQLException {
-        CONNECTION.createStatement().execute(sql);
+//        CONNECTION.createStatement().execute(sql);
     }
 }

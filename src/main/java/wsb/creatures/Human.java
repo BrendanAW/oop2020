@@ -15,6 +15,7 @@ public class Human extends Animal {
     protected String phoneNumber;
     private Double salary;
     public Double cash = 200.0;
+    private Gender gender;
 
     private static final int DEFAULT_FARM_SIZE = 3;
     private static final int DEFAULT_GARAGE_SIZE = 3;
@@ -26,9 +27,10 @@ public class Human extends Animal {
         this.garage = new Car[garageSize];
     }
 
-    public Human(Integer farmSize) {
+    public Human(Integer farmSize, Gender gender) {
         super("homo sapiens");
         this.farm = new Animal[farmSize];
+        this.gender = gender;
         this.garage = new Car[DEFAULT_GARAGE_SIZE];
     }
 
@@ -40,6 +42,12 @@ public class Human extends Animal {
 
     public Double getSalary() {
         return salary;
+    }
+
+    public void sayImFirst() {
+        if (gender.equals(Gender.MALE))
+            System.out.println("Jestem pierwszy");
+        else System.out.println("Jestem pierwsza");
     }
 
     public void sell() throws Exception {

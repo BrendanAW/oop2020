@@ -8,16 +8,25 @@ import java.util.*;
 public class Phone extends Device {
     final Double screenSize;
     public List<App> applications;
+    private final OS os;
 
-    public Phone(String producer, String model, Double screenSize) {
+    public Phone(String producer, String model, Double screenSize, OS os) {
         super(producer, model);
         this.screenSize = screenSize;
+        this.os = os;
         applications = new LinkedList<>();
     }
 
     @Override
     public void turnOn() {
-        System.out.println("phone is turned on");
+        if (os.equals(OS.IOS))
+            System.out.println("Bring bling, I'm on and gonna be worthless in a week lol");
+        else if (os.equals(OS.WINDOWS_MOBIE))
+            System.out.println("Lol I'm a dinosaur");
+        else
+            System.out.println("Actually Android is better than ios in every single way, like watch me put widgets on my home screen" +
+                    " like yeah I know you can do it too now but Android has been able to do that forever oh my god get " +
+                    "with the times");
     }
 
 
