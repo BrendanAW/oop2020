@@ -5,11 +5,23 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="20f60e7c-1072-4eda-ad3b-c7e9cd2d49fb" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/wsb/Country.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/wsb/food/FoodType.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/wsb/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/wsb/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/wsb/creatures/Animal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/wsb/creatures/Animal.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/wsb/creatures/FarmAnimal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/wsb/creatures/FarmAnimal.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/wsb/creatures/Feedable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/wsb/creatures/Feedable.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/wsb/creatures/Human.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/wsb/creatures/Human.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/wsb/creatures/Pet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/wsb/creatures/Pet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/wsb/devices/Phone.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/wsb/devices/Phone.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/wsb/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/wsb/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/wsb/creatures/Animal.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/wsb/creatures/Animal.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/wsb/creatures/FarmAnimal.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/wsb/creatures/FarmAnimal.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/wsb/creatures/Feedable.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/wsb/creatures/Feedable.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/wsb/creatures/Human.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/wsb/creatures/Human.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/wsb/creatures/Pet.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/wsb/creatures/Pet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/wsb/devices/Phone.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/wsb/devices/Phone.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -19,6 +31,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Class" />
         <option value="Enum" />
       </list>
     </option>
@@ -69,6 +82,7 @@
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="wsb.Main" />
       <module name="oop2020" />
+      <option name="PROGRAM_PARAMETERS" value="5 small" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="wsb.*" />
@@ -108,7 +122,7 @@
       <workItem from="1613229030079" duration="37000" />
       <workItem from="1613229084404" duration="634000" />
       <workItem from="1613229740531" duration="5690000" />
-      <workItem from="1613323748515" duration="878000" />
+      <workItem from="1613323748515" duration="7710000" />
     </task>
     <task id="LOCAL-00001" summary="Made this project my own">
       <created>1613235106705</created>
@@ -117,7 +131,14 @@
       <option name="project" value="LOCAL" />
       <updated>1613235106705</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Updated project">
+      <created>1613324673431</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1613324673431</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -137,6 +158,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Made this project my own" />
-    <option name="LAST_COMMIT_MESSAGE" value="Made this project my own" />
+    <MESSAGE value="Updated project" />
+    <option name="LAST_COMMIT_MESSAGE" value="Updated project" />
   </component>
 </project>

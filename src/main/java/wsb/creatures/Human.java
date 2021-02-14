@@ -2,6 +2,7 @@ package wsb.creatures;
 
 import wsb.devices.Car;
 import wsb.devices.Phone;
+import wsb.food.FoodType;
 
 public class Human extends Animal {
     public String firstName;
@@ -16,26 +17,30 @@ public class Human extends Animal {
     private Double salary;
     public Double cash = 200.0;
     private Gender gender;
+    private final FoodType foodType;
 
     private static final int DEFAULT_FARM_SIZE = 3;
     private static final int DEFAULT_GARAGE_SIZE = 3;
     private static Double DEFAULT_FEED_WEIGHT = 1.5;
 
-    public Human(Integer farmSize, Integer garageSize) {
+    public Human(Integer farmSize, Integer garageSize, FoodType foodType) {
         super("homo sapiens", foodType);
         this.farm = new Animal[farmSize];
         this.garage = new Car[garageSize];
+        this.foodType = foodType;
     }
 
-    public Human(Integer farmSize, Gender gender) {
+    public Human(Integer farmSize, Gender gender, FoodType foodType) {
         super("homo sapiens", foodType);
         this.farm = new Animal[farmSize];
         this.gender = gender;
+        this.foodType = foodType;
         this.garage = new Car[DEFAULT_GARAGE_SIZE];
     }
 
-    public Human() {
+    public Human(FoodType foodType) {
         super("homo sapiens", foodType);
+        this.foodType = foodType;
         this.farm = new Animal[DEFAULT_FARM_SIZE];
         this.garage = new Car[DEFAULT_GARAGE_SIZE];
     }
@@ -64,7 +69,7 @@ public class Human extends Animal {
 
     public void feed() {
         System.out.println("I'm a human I will use fork and knife");
-        super.feed(DEFAULT_FEED_WEIGHT);
+        super.feed(DEFAULT_FEED_WEIGHT, foodType);
     }
 
     public Double valueOfCars() {
@@ -95,11 +100,9 @@ public class Human extends Animal {
     }
 
     public boolean hasAFreePlace() {
-        for (int i = 0; i < garage.length; i++) {
-            if (garage[i] == null) {
+        for (Car car : garage)
+            if (car == null)
                 return true;
-            }
-        }
         return false;
     }
 

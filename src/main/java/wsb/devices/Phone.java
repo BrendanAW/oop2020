@@ -29,7 +29,6 @@ public class Phone extends Device {
                     "with the times");
     }
 
-
     public void sell() {
         System.out.println("already sold");
     }
@@ -49,8 +48,7 @@ public class Phone extends Device {
         installAnApp(name, 0.0);
     }
 
-
-    public void installAnApp(String[] apps) {
+    public void installAnApp(String... apps) {
         for (String app : apps) {
             installAnApp(app);
         }

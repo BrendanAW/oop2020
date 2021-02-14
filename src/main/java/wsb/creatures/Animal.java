@@ -1,6 +1,7 @@
 package wsb.creatures;
 
 import wsb.database.Connector;
+import wsb.food.FoodType;
 
 import java.io.File;
 import java.sql.SQLException;
@@ -57,23 +58,20 @@ public class Animal implements Feedable, Comparable<Animal> {
 
 
     public void feed() {
-        feed(DEFAULT_FEED_WEIGHT);
+        feed(DEFAULT_FEED_WEIGHT, foodType);
     }
 
-    public void feed(Double foodWeight) {
+
+    public void feed(Double foodWeight, FoodType foodType) {
         if (weight == 0) {
             System.out.println("too late, " + name + " is dead");
-        } else {
-
-            weight = foodWeight * (switch (foodType) {
-                case ALL -> 0.5;
-                case MEAT -> 0.7;
-                case CROPS -> 0.3;
-            });
-
-
-            System.out.println(name + " says thx for food");
+            return;
         }
+        if (!foodType.equals(this.foodType))
+            return;
+        weight = foodWeight * foodType.getFoodToBodyRatio();
+        System.out.println(name + " says thx for food");
+
     }
 
     public void takeForAWalk() {
@@ -115,9 +113,14 @@ public class Animal implements Feedable, Comparable<Animal> {
         Connector.executeSQL(sql);
     }
 
-    public enum FoodType {
-        MEAT,
-        CROPS,
-        ALL
-    }
+
+    //3. add field foodToBodyRatio to enum FoodType
+    //
+    //4. redo feed method
+    //
+    //
+    //
+    //5. change method feed to get foodType as a parameter, if it doesn't fit to animal there should be a text information and no body mass gain
+    //6. will it be better now to move FoodType outside the Animal class? so move it out :)
+
 }

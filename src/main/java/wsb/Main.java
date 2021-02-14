@@ -6,22 +6,53 @@ import wsb.creatures.Human;
 import wsb.creatures.Pet;
 import wsb.database.Connector;
 import wsb.devices.*;
+import wsb.food.FoodType;
 
+import java.util.HashMap;
+import java.util.Map;
 import java.util.Set;
 import java.util.TreeSet;
 
 public class Main {
 
     public static void main(String[] args) throws Exception {
+//        ResultSet rs = Connector.getStatement().executeQuery("SELECT * FROM animal");
 
+//        List<Animal> animals = new LinkedList<>();
+//
+//        while (rs.next()) {
+//            Animal animal = new Animal(rs.getString("species"), rs.getDouble("weight"));
+//            animal.name = rs.getString("name");
+//            animals.add(animal);
+//        }
+//
+//        System.out.println(animals);
+//        for (String arg : args) {
+//            System.out.println(arg);
+//        }
+
+        Map<String, Car> carMap = new HashMap<>();
+        carMap.put("Ferrari", new DieselCar("Ferrari", "Shiny", 2002, 5.5));
+        carMap.put("Linguine", new DieselCar("Linguine", "Shoddy", 2022, 2.5));
+        carMap.put("Biggs", new DieselCar("Biggs", "Shorty", 1998, 5.4));
+        carMap.put("Toyota", new DieselCar("Toyota", "Shevy", 2011, 2.3));
+
+        carMap.values().stream().map(Car::getModel).sorted().forEach(System.out::println);
+    }
+
+
+    //Create a HashMap with String model as key and Car as value
+    //	2. Add a few cars into a map.
+    //	3. Print it in alphabetical order of models.
+    private static void pileOfCode() throws Exception {
         Connector.connect();
 
-        Pet dog = new Pet("dog");
+        Pet dog = new Pet("dog", FoodType.MEAT);
         dog.name = "Akita";
 
         Phone iphone = new Phone("Apple", "6s", 4.7, OS.IOS);
 
-        Human me = new Human(3, Gender.MALE);
+        Human me = new Human(3, Gender.MALE, FoodType.ALL);
         me.firstName = "Kacper";
         me.lastName = "Warda";
         me.pet = dog;
@@ -38,7 +69,7 @@ public class Main {
         dirtyOne.turnOn();
 
 
-        Human myWife = new Human(4, Gender.FEMALE);
+        Human myWife = new Human(4, Gender.FEMALE, FoodType.ALL);
         myWife.firstName = "Karolina";
         myWife.lastName = "Warda";
         myWife.setCar(new ElectricCar("Tesla", "S", 2019), 0);
@@ -47,7 +78,7 @@ public class Main {
         System.out.println(me.getCar(0));
         System.out.println(me);
 
-        Human brotherInLaw = new Human(2, Gender.MALE);
+        Human brotherInLaw = new Human(2, Gender.MALE, FoodType.ALL);
         brotherInLaw.firstName = "Mateusz";
         brotherInLaw.lastName = "Skiba";
 
@@ -71,7 +102,7 @@ public class Main {
         humans.add(myWife);
         humans.add(me);
         humans.add(brotherInLaw);
-        humans.add(new Animal("dog", Animal.FoodType.ALL));
+        humans.add(new Animal("dog", FoodType.ALL));
 
 
         System.out.println(me.getCar(0).value);
@@ -88,22 +119,7 @@ public class Main {
         System.out.println(me.mobile.isInstalled(messenger));
         System.out.println(me.mobile.isInstalled("facebook"));
         System.out.println(me.mobile.isInstalled("messenger"));
-
-
-//        ResultSet rs = Connector.getStatement().executeQuery("SELECT * FROM animal");
-
-//        List<Animal> animals = new LinkedList<>();
-//
-//        while (rs.next()) {
-//            Animal animal = new Animal(rs.getString("species"), rs.getDouble("weight"));
-//            animal.name = rs.getString("name");
-//            animals.add(animal);
-//        }
-//
-//        System.out.println(animals);
-
     }
-
     //1. Create an enum FoodType inside Animal class with values meet/crops/all
     //
     //add final field foodType to Animal class choose it basing on a specie.
