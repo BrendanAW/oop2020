@@ -10,6 +10,7 @@ public class Animal implements Feedable, Comparable<Animal> {
     private Double weight;
     public String name;
     File pic;
+    private final FoodType foodType;
 
     private static Double NEW_DOG_WEIGHT = 4.0;
     private static Double NEW_LION_WEIGHT = 39.2;
@@ -17,7 +18,8 @@ public class Animal implements Feedable, Comparable<Animal> {
 
     private static Double DEFAULT_FEED_WEIGHT = 1.0;
 
-    public Animal(String species) {
+    public Animal(String species, FoodType foodType) {
+        this.foodType = foodType;
         System.out.println("we created new Animal");
         this.species = species;
 
@@ -42,9 +44,10 @@ public class Animal implements Feedable, Comparable<Animal> {
         }
     }
 
-    public Animal(String species, Double weight) {
+    public Animal(String species, Double weight, FoodType foodType) {
         this.weight = weight;
         this.species = species;
+        this.foodType = foodType;
         try {
             this.save();
         } catch (SQLException e) {
@@ -61,7 +64,14 @@ public class Animal implements Feedable, Comparable<Animal> {
         if (weight == 0) {
             System.out.println("too late, " + name + " is dead");
         } else {
-            weight += foodWeight;
+
+            weight = foodWeight * (switch (foodType) {
+                case ALL -> 0.5;
+                case MEAT -> 0.7;
+                case CROPS -> 0.3;
+            });
+
+
             System.out.println(name + " says thx for food");
         }
     }
@@ -103,5 +113,11 @@ public class Animal implements Feedable, Comparable<Animal> {
         String sql = "insert into animal values ('" + this.species + "','" + this.name + "'," + this.weight + ");";
         System.out.println(sql);
         Connector.executeSQL(sql);
+    }
+
+    public enum FoodType {
+        MEAT,
+        CROPS,
+        ALL
     }
 }

@@ -22,20 +22,20 @@ public class Human extends Animal {
     private static Double DEFAULT_FEED_WEIGHT = 1.5;
 
     public Human(Integer farmSize, Integer garageSize) {
-        super("homo sapiens");
+        super("homo sapiens", foodType);
         this.farm = new Animal[farmSize];
         this.garage = new Car[garageSize];
     }
 
     public Human(Integer farmSize, Gender gender) {
-        super("homo sapiens");
+        super("homo sapiens", foodType);
         this.farm = new Animal[farmSize];
         this.gender = gender;
         this.garage = new Car[DEFAULT_GARAGE_SIZE];
     }
 
     public Human() {
-        super("homo sapiens");
+        super("homo sapiens", foodType);
         this.farm = new Animal[DEFAULT_FARM_SIZE];
         this.garage = new Car[DEFAULT_GARAGE_SIZE];
     }

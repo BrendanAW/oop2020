@@ -71,7 +71,7 @@ public class Main {
         humans.add(myWife);
         humans.add(me);
         humans.add(brotherInLaw);
-        humans.add(new Animal("dog"));
+        humans.add(new Animal("dog", Animal.FoodType.ALL));
 
 
         System.out.println(me.getCar(0).value);
@@ -103,4 +103,16 @@ public class Main {
 //        System.out.println(animals);
 
     }
+
+    //1. Create an enum FoodType inside Animal class with values meet/crops/all
+    //
+    //add final field foodType to Animal class choose it basing on a specie.
+    //
+    //2. Add switch case to feed method:
+    //
+    // - in case of omnivores 50% mass of food will be build into body mass
+    //
+    // - in case of carnivorous 70% mass of food will be build into body mass
+    //
+    // - in case of herbivorous 30% mass of food will be build into body mass
 }
