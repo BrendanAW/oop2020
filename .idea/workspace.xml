@@ -4,16 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="20f60e7c-1072-4eda-ad3b-c7e9cd2d49fb" name="Default Changelist" comment="up to task 9B">
-      <change afterPath="$PROJECT_DIR$/src/main/java/wsb/threads/Finisher.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/wsb/threads/RNG.java" afterDir="false" />
+    <list default="true" id="20f60e7c-1072-4eda-ad3b-c7e9cd2d49fb" name="Default Changelist" comment="Task 9 finished">
+      <change afterPath="$PROJECT_DIR$/src/main/java/wsb/threads/CallableSorter.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/wsb/threads/Counter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/wsb/threads/Counter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/wsb/threads/Scorpion.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/wsb/threads/SubZero.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/wsb/threads/Counter.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/wsb/threads/Counter.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/wsb/threads/Scorpion.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/wsb/threads/SubZero.class" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -79,7 +72,20 @@
       <recent name="D:\Projects\oop2020\src" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.RNG">
+  <component name="RunManager" selected="Application.CallableSorter">
+    <configuration name="CallableSorter" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="wsb.threads.CallableSorter" />
+      <module name="oop2020" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="wsb.threads.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Counter" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="wsb.threads.Counter" />
       <module name="oop2020" />
@@ -133,6 +139,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.CallableSorter" />
         <item itemvalue="Application.RNG" />
         <item itemvalue="Application.Counter" />
         <item itemvalue="Application.Main" />
@@ -153,7 +160,7 @@
       <workItem from="1613229740531" duration="5690000" />
       <workItem from="1613323748515" duration="8023000" />
       <workItem from="1614409764820" duration="5452000" />
-      <workItem from="1618138297468" duration="3014000" />
+      <workItem from="1618138297468" duration="4093000" />
     </task>
     <task id="LOCAL-00001" summary="Made this project my own">
       <created>1613235106705</created>
@@ -211,7 +218,14 @@
       <option name="project" value="LOCAL" />
       <updated>1618139813772</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Task 9 finished">
+      <created>1618141435116</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1618141435116</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -237,6 +251,7 @@
     <MESSAGE value="Task 6?" />
     <MESSAGE value="Task 8" />
     <MESSAGE value="up to task 9B" />
-    <option name="LAST_COMMIT_MESSAGE" value="up to task 9B" />
+    <MESSAGE value="Task 9 finished" />
+    <option name="LAST_COMMIT_MESSAGE" value="Task 9 finished" />
   </component>
 </project>
