@@ -3,6 +3,12 @@ package wsb.threads;
 import java.util.concurrent.TimeUnit;
 
 public class Counter implements Runnable {
+    private final Finisher finisher;
+
+    public Counter(Finisher finisher) {
+        this.finisher = finisher;
+    }
+
     @Override
     public void run() {
         for (int i = 10; i > 0; i--) {
@@ -13,6 +19,8 @@ public class Counter implements Runnable {
                 e.printStackTrace();
             }
         }
+
+        finisher.finishHim();
     }
 
     public static void main(String[] args) {
@@ -21,7 +29,12 @@ public class Counter implements Runnable {
 //        new Thread(new Counter()).start();
 
         //Task 9b
-        new Thread(new Scorpion()).start();
-        new Thread(new SubZero()).start();
+//        new Thread(new Scorpion()).start();
+//        new Thread(new SubZero()).start();
+
+        new Thread(new Counter(() -> System.out.println("Get over here!"))).start();
+        new Thread(new Counter(() -> System.out.println("Give me your heart!!"))).start();
+
+
     }
 }
