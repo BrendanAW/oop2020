@@ -1,20 +1,20 @@
 package wsb.database;
 
-import wsb.annotatins.Mapped;
+import wsb.annotatins.MappedClass;
 import wsb.creatures.Human;
 import wsb.creatures.Pet;
 import wsb.food.FoodType;
 
 import java.lang.reflect.Field;
-import java.sql.SQLException;
 import java.util.Arrays;
 import java.util.List;
 import java.util.stream.Collectors;
 
 public class ObjectToSql {
     public String insert(Object object) throws IllegalAccessException {
+        if (!object.getClass().isAnnotationPresent(MappedClass.class))
+            return null;
         List<Field> fields = Arrays.stream(object.getClass().getFields())
-                .filter(field -> field.isAnnotationPresent(Mapped.class))
                 .collect(Collectors.toList());
         String name = object.getClass().getName();
         Object[] fieldValues = new Object[fields.size()];
