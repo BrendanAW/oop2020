@@ -4,11 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="20f60e7c-1072-4eda-ad3b-c7e9cd2d49fb" name="Default Changelist" comment="Task 11 finished">
-      <change afterPath="$PROJECT_DIR$/src/main/java/wsb/database/ObjectToSql.java" afterDir="false" />
+    <list default="true" id="20f60e7c-1072-4eda-ad3b-c7e9cd2d49fb" name="Default Changelist" comment="Task 12 finished">
+      <change afterPath="$PROJECT_DIR$/src/main/java/wsb/annotatins/Mapped.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/wsb/annotatins/MappedClass.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/wsb/creatures/Animal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/wsb/creatures/Animal.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/wsb/threads/CallableSorter.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/wsb/threads/CallableSorter.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/wsb/creatures/Human.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/wsb/creatures/Human.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/wsb/database/ObjectToSql.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/wsb/database/ObjectToSql.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -21,6 +22,7 @@
         <option value="Enum" />
         <option value="Interface" />
         <option value="Class" />
+        <option value="AnnotationType" />
       </list>
     </option>
   </component>
@@ -176,7 +178,7 @@
       <workItem from="1613229740531" duration="5690000" />
       <workItem from="1613323748515" duration="8023000" />
       <workItem from="1614409764820" duration="5452000" />
-      <workItem from="1618138297468" duration="5431000" />
+      <workItem from="1618138297468" duration="8346000" />
     </task>
     <task id="LOCAL-00001" summary="Made this project my own">
       <created>1613235106705</created>
@@ -255,7 +257,21 @@
       <option name="project" value="LOCAL" />
       <updated>1618142552443</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="Task 12 finished">
+      <created>1618143901232</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1618143901232</updated>
+    </task>
+    <task id="LOCAL-00013" summary="Task 12 finished">
+      <created>1618144027585</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1618144027585</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -284,17 +300,7 @@
     <MESSAGE value="Task 9 finished" />
     <MESSAGE value="Task 10 finished" />
     <MESSAGE value="Task 11 finished" />
-    <option name="LAST_COMMIT_MESSAGE" value="Task 11 finished" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/wsb/database/ObjectToSql.java</url>
-          <line>13</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+    <MESSAGE value="Task 12 finished" />
+    <option name="LAST_COMMIT_MESSAGE" value="Task 12 finished" />
   </component>
 </project>
