@@ -89,7 +89,7 @@ public class Animal implements Feedable, Comparable<Animal> {
         }
     }
 
-    Double getWeight() {
+    public Double getWeight() {
         return weight;
     }
 
@@ -112,7 +112,6 @@ public class Animal implements Feedable, Comparable<Animal> {
         System.out.println(sql);
         Connector.executeSQL(sql);
     }
-
 
     //3. add field foodToBodyRatio to enum FoodType
     //

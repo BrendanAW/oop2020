@@ -1,13 +1,11 @@
 package wsb;
 
-import wsb.creatures.Animal;
-import wsb.creatures.Gender;
-import wsb.creatures.Human;
-import wsb.creatures.Pet;
+import wsb.creatures.*;
 import wsb.database.Connector;
 import wsb.devices.*;
 import wsb.food.FoodType;
 
+import java.sql.SQLException;
 import java.util.*;
 import java.util.stream.Collectors;
 
@@ -28,28 +26,44 @@ public class Main {
 //        for (String arg : args) {
 //            System.out.println(arg);
 //        }
-        Map<Country, Double> countries = new HashMap<>();
+        /*Map<Country, Double> countries = new HashMap<>();
         countries.put(Country.GERMANY, 357386.0);
         countries.put(Country.JAPAN, 377915.0);
         countries.put(Country.SPAIN, 505990.0);
         countries.put(Country.US, 9000000.0);
         countries.put(Country.POLAND, 312679.0);
-
-        Map<Country, Double> countriesSynced = Collections.synchronizedMap(countries);
+*/
+        /* Map<*//*Country, Double> countriesSynced = Collections.synchronizedMap(countries);
         System.out.println(task5Smallest(countries));
         System.out.println(task5Largest(countries));
 
         System.out.println(task5Smallest(countriesSynced));
         System.out.println(task5Largest(countriesSynced));
+*/
+//        System.out.println("===================================");
 
-        System.out.println("===================================");
-
-        Map<String, List<Device>> devices = new HashMap<>();
+       /* Map<String, List<Device>> devices = new HashMap<>();
         devices.put("Ford", List.of(new DieselCar("Ford", "Somthing", 2002, 2.02, 40, 500),
                 new ElectricCar("ford", "dklaf", 2002)));
         devices.put("Siemens", List.of(new ElectricCar("Siemens", "Somthing Else", 2002)));
-        devices.put("Toyota", List.of(new DieselCar("Toyota", "alkskdjf", 2002, 2.02, 343, 4433)));
-        System.out.println(task6(devices));
+        devices.put("Toyota", List.of(new DieselCar("Toyota", "alkskdjf", 2002, 2.02, 343, 4433)));*/
+//        System.out.println(task6(devices));
+
+
+        task8();
+    }
+
+    private static void task8() throws SQLException {
+        List<Animal> animals = new ArrayList<>(List.of(
+                new Human(5, 1, FoodType.ALL),
+                new Human(1, 1, FoodType.ALL),
+                new Human(2, 1, FoodType.ALL),
+                new Pet("Dog", FoodType.ALL),
+                new FarmAnimal("Cow", FoodType.CROPS)
+        ));
+
+        animals.sort((Comparator.comparingDouble(Animal::getWeight)));
+        animals.forEach(System.out::println);
     }
 
     public void task4() {

@@ -4,17 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="20f60e7c-1072-4eda-ad3b-c7e9cd2d49fb" name="Default Changelist" comment="">
+    <list default="true" id="20f60e7c-1072-4eda-ad3b-c7e9cd2d49fb" name="Default Changelist" comment="Task 6?">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/wsb/Country.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/wsb/Country.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/wsb/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/wsb/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/wsb/devices/Car.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/wsb/devices/Car.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/wsb/devices/DieselCar.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/wsb/devices/DieselCar.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/wsb/devices/ElectricCar.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/wsb/devices/ElectricCar.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/wsb/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/wsb/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/wsb/devices/Car.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/wsb/devices/Car.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/wsb/devices/DieselCar.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/wsb/devices/DieselCar.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/wsb/devices/ElectricCar.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/wsb/devices/ElectricCar.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/wsb/creatures/Animal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/wsb/creatures/Animal.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -31,6 +24,14 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
   </component>
   <component name="ProjectId" id="1oQq6LtkM6bvmb85JPdQYWuidBc" />
   <component name="ProjectLevelVcsManager">
@@ -86,6 +87,17 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="Application.Main" />
@@ -106,6 +118,7 @@
       <workItem from="1613229740531" duration="5690000" />
       <workItem from="1613323748515" duration="8023000" />
       <workItem from="1614409764820" duration="5452000" />
+      <workItem from="1618138297468" duration="797000" />
     </task>
     <task id="LOCAL-00001" summary="Made this project my own">
       <created>1613235106705</created>
@@ -128,7 +141,21 @@
       <option name="project" value="LOCAL" />
       <updated>1613332770039</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Task 7">
+      <created>1618138482958</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1618138482958</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Task 6?">
+      <created>1618138517505</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1618138517505</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -150,6 +177,8 @@
     <MESSAGE value="Made this project my own" />
     <MESSAGE value="Updated project" />
     <MESSAGE value="Tasks from Valentine's Day" />
-    <option name="LAST_COMMIT_MESSAGE" value="Tasks from Valentine's Day" />
+    <MESSAGE value="Task 7" />
+    <MESSAGE value="Task 6?" />
+    <option name="LAST_COMMIT_MESSAGE" value="Task 6?" />
   </component>
 </project>
