@@ -21,7 +21,7 @@ public class Animal implements Feedable, Comparable<Animal> {
 
     public Animal(String species, FoodType foodType) {
         this.foodType = foodType;
-        System.out.println("we created new Animal");
+//        System.out.println("we created new Animal");
         this.species = species;
 
         switch (species) {
@@ -38,11 +38,11 @@ public class Animal implements Feedable, Comparable<Animal> {
                 break;
             }
         }
-        try {
-            this.save();
-        } catch (SQLException e) {
-            e.printStackTrace();
-        }
+//        try {
+//            this.save();
+//        } catch (SQLException e) {
+//            e.printStackTrace();
+//        }
     }
 
     public Animal(String species, Double weight, FoodType foodType) {
