@@ -4,7 +4,8 @@ public enum Country {
     US("English", "USA", 21000000000000L),
     POLAND("Polish", "POL", 595000000000L),
     GERMANY("German", "DEU", 3000000000000L),
-    SPAIN("Spanish", "ESP", 1000000000000L);
+    SPAIN("Spanish", "ESP", 1000000000000L),
+    JAPAN("Japanese", "JPN", 1000000000000000L);
     final String language;
     final String countryCode;
     final long gdp;

@@ -5,23 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="20f60e7c-1072-4eda-ad3b-c7e9cd2d49fb" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/wsb/Country.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/wsb/food/FoodType.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/wsb/Country.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/wsb/Country.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/wsb/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/wsb/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/wsb/creatures/Animal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/wsb/creatures/Animal.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/wsb/creatures/FarmAnimal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/wsb/creatures/FarmAnimal.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/wsb/creatures/Feedable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/wsb/creatures/Feedable.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/wsb/creatures/Human.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/wsb/creatures/Human.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/wsb/creatures/Pet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/wsb/creatures/Pet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/wsb/devices/Phone.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/wsb/devices/Phone.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/wsb/devices/Car.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/wsb/devices/Car.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/wsb/devices/DieselCar.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/wsb/devices/DieselCar.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/wsb/devices/ElectricCar.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/wsb/devices/ElectricCar.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/wsb/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/wsb/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/wsb/creatures/Animal.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/wsb/creatures/Animal.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/wsb/creatures/FarmAnimal.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/wsb/creatures/FarmAnimal.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/wsb/creatures/Feedable.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/wsb/creatures/Feedable.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/wsb/creatures/Human.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/wsb/creatures/Human.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/wsb/creatures/Pet.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/wsb/creatures/Pet.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/wsb/devices/Phone.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/wsb/devices/Phone.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/wsb/devices/Car.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/wsb/devices/Car.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/wsb/devices/DieselCar.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/wsb/devices/DieselCar.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/wsb/devices/ElectricCar.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/wsb/devices/ElectricCar.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -93,17 +86,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
-      <option name="arquillianRunConfiguration">
-        <value>
-          <option name="containerStateName" value="" />
-        </value>
-      </option>
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="Application.Main" />
@@ -122,7 +104,8 @@
       <workItem from="1613229030079" duration="37000" />
       <workItem from="1613229084404" duration="634000" />
       <workItem from="1613229740531" duration="5690000" />
-      <workItem from="1613323748515" duration="7710000" />
+      <workItem from="1613323748515" duration="8023000" />
+      <workItem from="1614409764820" duration="5452000" />
     </task>
     <task id="LOCAL-00001" summary="Made this project my own">
       <created>1613235106705</created>
@@ -138,7 +121,14 @@
       <option name="project" value="LOCAL" />
       <updated>1613324673431</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Tasks from Valentine's Day">
+      <created>1613332770039</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1613332770039</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -159,6 +149,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Made this project my own" />
     <MESSAGE value="Updated project" />
-    <option name="LAST_COMMIT_MESSAGE" value="Updated project" />
+    <MESSAGE value="Tasks from Valentine's Day" />
+    <option name="LAST_COMMIT_MESSAGE" value="Tasks from Valentine's Day" />
   </component>
 </project>

@@ -2,7 +2,7 @@ package wsb.devices;
 
 public class ElectricCar extends Car {
     public ElectricCar(String producer, String model, Integer yearOfProduction) {
-        super(producer, model, yearOfProduction, null);
+        super(producer, model, yearOfProduction);
     }
 
     @Override
@@ -10,7 +10,7 @@ public class ElectricCar extends Car {
         System.out.println("Refueled with electric power");
     }
 
-    public String toString(){
+    public String toString() {
         return "That is an electric car " + super.toString();
     }
 }
